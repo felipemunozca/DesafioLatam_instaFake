@@ -1,0 +1,42 @@
+Feedback Desafío - InstaFake
+
+Excelente trabajo, para evitar los problemas generdos con cors puedes instalar el paquete cors mediante la terminal: 
+    npm i cors 
+posterior a ello, en el archivo index.js (backend) utilizar lo siguiente:
+    const cors = require('cors')
+    app.use(cors());
+
+Requerimientos
+
+1. Obtener el JWT a través del formulario de login entregado. (1 Punto)
+
+    Puntaje obtenido: 1
+
+2. Persistir el token utilizando localStorage. (1 Punto)
+
+    Puntaje obtenido: 1
+
+3. Al momento de recibir el JWT ocultar el formulario y mostrar el feed principal con las fotos. (1 Punto)
+    
+    Puntaje obtenido: 1
+
+4. Con el JWT consumir la API http://localhost:3000/api/photos. (1 Punto) 
+
+    Puntaje obtenido: 1
+
+5. Manipular el JSON de respuesta de la API anterior y manipular el DOM con JavaScript para mostrar las imágenes. (1.5 Puntos)
+
+    Puntaje obtenido: 1.5
+
+6. Cargar el feed de fotos cuando exista el JWT. (1 Punto)
+
+    Puntaje obtenido: 1
+
+7. En la parte inferior de la página, crear un botón que al presionarlo traiga más fotos (http://localhost:3000/api/photos?page=x), que deben ser añadidas 
+al listado existente. (2.5 Punto)
+
+    Puntaje obtenido: 2.5
+
+8. Crear botón de logout que elimine el JWT almacenado y vuelva la aplicación a su estado inicial. (1 Punto)
+
+    Puntaje obtenido: 1
